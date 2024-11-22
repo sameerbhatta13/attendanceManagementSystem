@@ -1,0 +1,89 @@
+/* Basic reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #f8f9fa; /* Light background */
+  padding: 1rem 2rem; /* Spacing around the navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.navbar-brand {
+  color: #007bff; /* Primary color for brand name */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar-brand:hover {
+  color: #0056b3; /* Slightly darker shade on hover */
+  text-decoration: none; /* No underline */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23007bff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Links styling */
+.nav-link {
+  color: #6c757d; /* Medium gray for links */
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Blue shade on hover */
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+  border-radius: 5px;
+  transition: color 0.2s ease, background-color 0.2s ease; /* Smooth transition */
+}
+
+.nav-link.active {
+  color: #007bff; /* Primary color for active link */
+  font-weight: bold;
+}
+
+/* Search form styling */
+.form-control {
+  border: 1px solid #ced4da; /* Light border for input */
+  border-radius: 20px; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Spacious input */
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff; /* Primary color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Soft blue shadow on focus */
+}
+
+.btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1rem; /* Adjust brand size on small screens */
+  }
+
+  .nav-link {
+    padding: 0.5rem; /* Compact link padding on mobile */
+  }
+}
